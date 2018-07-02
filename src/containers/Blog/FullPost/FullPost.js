@@ -16,12 +16,8 @@ componentDidUpdate(){
                 this.setState({loadedPost : response.data})
             })  
         }
-
     }
-
-
 }
-
 
 deletePostHandler = () =>{
     axios.delete('/posts/' + this.props.id)
